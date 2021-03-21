@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=devide-width, initial-scale1.0" />
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen" />
+    <title>Cadastro</title>
+</head>
+<body style="height:100%; width:50%;">
+
+    <div>
+        <h1 id="titulo"><font size="7" face="modern">Cadastro de DEV's</font></h1>
+        <p id="subtitulo"><font size="5" face="modern">Complete suas informações</font></p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome"><font size="4" face="modern"><strong>Nome</strong></font></label>
+                <input type="text" name="nome" id="nome" required />
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><font size="4" face="modern"><strong>Sobrenome</strong></font></label>
+                <input type="text" name="sobrenome" id="sobrenome" required />
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <label for="email"><font size="4" face="modern"><strong>E-mail</strong></font></label>
+            <input type="email" name="email" id="email" required />
+
+        </div>
+        
+        <div class="campo">
+            <label><font size="4" face="modern"><strong>De qual lado da aplicação você desenvolve?</strong></font></label>
+            <label>
+                <input type="radio" name="devweb" value="frontend" checked>Front-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="backend">Back-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="fullstack">Fullstack
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="senioridade"><font size="4" face="modern"><strong>Senioridade</strong></font></label>
+            <select id="senioridade" required>
+                <option selected disabled value="">Selecione</option>
+                <option>Júnior</option>
+                <option>Pleno</option>
+                <option>Sênior</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label><font size="4" face="modern"><strong>Selecione as tecnologias que utiliza:</strong></font></label><br><br>
+                <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                <label for="tecnologia1"> HTML</label>
+                <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                <label for="tecnologia2"> CSS</label>
+                <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
+                <label for="tecnologia3"> JavaScript</label>
+                <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
+                <label for="tecnologia4"> PHP</label>
+                <br />
+                <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
+                <label for="tecnologia5"> C#</label>
+                <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
+                <label for="tecnologia6"> Python</label>
+                <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Java">
+                <label for="tecnologia7"> Java</label>
+                <input type="checkbox" id="tecnologia8" name="tecnologia8" value="C">
+                <label for="tecnologia8"> C</label>
+                <input type="checkbox" id="tecnologia9" name="tecnologia9" value="C++">
+                <label for="tecnologia9"> C++</label>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label for="experiencia"><font size="4" face="modern"><strong>Conte um pouco mais da sua experiência: </strong></font></label>
+            <textarea rows="2" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+        </div>
+
+        <button class="botao" type="submit">Concluído</button>
+
+    </form>
+
+</bodystyle="height:100%;>
+
+</html>
